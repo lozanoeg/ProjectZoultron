@@ -60,6 +60,9 @@ public class LogInPane extends GridPane {
    public void processCredentials(ActionEvent event) {
    
    }
-
+   
+   public void newUser(ActionEvent event) {
+      
+   }
 
 }
