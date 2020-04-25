@@ -42,12 +42,16 @@ public class LogInPane extends GridPane {
       
       Button login = new Button("LOGIN");
       login.setOnAction(this::processCredentials);
+      
+      Button signup = new Button("SIGN UP");
+      signup.setOnAction(this::newUser);
    
       add(username, 0, 0);
       add(usernameIn, 1, 0);
       add(password, 0, 1);
       add(passwordIn, 1, 1);
       add(login, 1, 3);
+      add(signup, 0, 3);
       
    
       
