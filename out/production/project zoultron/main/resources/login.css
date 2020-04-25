@@ -1,0 +1,23 @@
+{
+    -fx-primary : #0C2340;
+    -fx-secondary : #F26522;
+    -fx-primarytext : #B2B2B2;
+    -fx-blue: #1976D2;
+    -fx-red: #FF0000;
+    -fx-color-1:#1976D2;
+}
+
+.root {
+    -fx-background-color: -fx-primary;
+}
+
+.text
+{
+    -fx-fill: -fx-primary;
+    -fx-font-size: 14pt;
+    -fx-text-alignment: center;
+}
+
+.text-id {
+    -fx-fill: -fx-secondary;
+}
