@@ -54,3 +54,26 @@
 .tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator {
     -fx-border-color: transparent;
 }
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+    -fx-control-inner-background: transparent;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-control-inner-background: transparent;
+}
+
+.scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+.button {
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+
+.text-id {
+    -fx-fill: -fx-secondary;
+}

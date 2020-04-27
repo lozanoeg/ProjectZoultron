@@ -19,7 +19,7 @@ public class User {
         this.password = password;
         this.passcheck = passcheck;
 
-        if (Main.getUserList().contains(this)) {
+        if (Application.getUserList().contains(this)) {
             return false;
         }
 
@@ -33,9 +33,11 @@ public class User {
     //checks to see if Login info is correct
     public boolean loginCheck(String username, String password) {
         this.username = username;
-        for(User u : Main.getUserList()){
+        this.password = password;
+        for(User u : Application.getUserList()){
             if (u.getUsername().equals(this.username)) {
                 if (u.getPassword().equals(this.password)){
+                    Application.setCurrentUser(u);
                     return true;
                 }
             }
