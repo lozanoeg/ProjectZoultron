@@ -1,5 +1,17 @@
 # ProjectZoultron
 software modeling and design
+
+![image](https://user-images.githubusercontent.com/28077452/80343090-ec23e200-882a-11ea-9f0f-40d41f269e5b.jpg)
+
+![image](https://user-images.githubusercontent.com/28077452/80343098-ef1ed280-882a-11ea-9563-aeb6b213e55b.jpg)
+
+![image](https://user-images.githubusercontent.com/28077452/80343102-f1812c80-882a-11ea-9404-9da8d7748450.jpg)
+
+![image](https://user-images.githubusercontent.com/28077452/80343111-f47c1d00-882a-11ea-97cf-c1828cf4fd36.jpg)
+
+![image](https://user-images.githubusercontent.com/28077452/80343115-f5ad4a00-882a-11ea-8f09-97d81ceb0364.jpg)
+
+![image](https://user-images.githubusercontent.com/28077452/80343128-f9d96780-882a-11ea-814a-fd0e90db6ad0.jpg)
 ## To run the jar you will need
 1. JavaFx 14.0.1
     - https://gluonhq.com/products/javafx/
