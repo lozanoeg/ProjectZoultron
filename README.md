@@ -21,8 +21,9 @@ software modeling and design
 3. make sure Java path variable is set to jdk 14
     - you can check by running java -version which shoould be 14
     - it will not work otherwise
-3. download the jar and batch from this repo
-4. Edit the batch to include required paths
+3. download the jar and batch from this repo and place in same folder
+4. Edit the batch 
+    - Edit PATH_TO_FX to be folder where javafx is installed
 5. run batch
 ## Things you will need to edit
 1. Java JDK
