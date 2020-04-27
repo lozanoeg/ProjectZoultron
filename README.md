@@ -10,3 +10,5 @@ software modeling and design
 4. IntelliJ IDEA
     - https://www.jetbrains.com/idea/
     - does not requre it but file structure and files used where made in IntelliJ
+5. to run in intelliJ you need this after telling intelliJ where the files above are
+    - --module-path "C:\Program Files\JavaFX\javafx-sdk-14.0.1\lib" --add-modules javafx.controls,javafx.fxml
