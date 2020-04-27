@@ -16,7 +16,6 @@ import main.User;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-import java.util.logging.Logger;
 
 
 public class loginController implements Initializable {
@@ -61,9 +60,10 @@ public class loginController implements Initializable {
 
     void loadMain() {
         try {
-            Parent parent = FXMLLoader.load(getClass().getResource("/main/main.fxml"));
+            Parent parent = FXMLLoader.load(getClass().getResource("/main/Application.fxml"));
             Stage stage = new Stage(StageStyle.DECORATED);
             stage.setTitle("Zoultron");
+            stage.setResizable(false);
             stage.setScene(new Scene(parent));
             stage.getScene().getStylesheets().add("main.css");
             stage.show();
@@ -75,15 +75,16 @@ public class loginController implements Initializable {
 
     void loadSignup() {
         try {
-            Parent parent = FXMLLoader.load(getClass().getResource("/main/signup/signup.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/main/signup.fxml"));
+            Parent parent = (Parent) fxmlLoader.load();
             Stage stage = new Stage(StageStyle.DECORATED);
             stage.setTitle("Zoultron");
+            stage.setResizable(false);
             stage.setScene(new Scene(parent));
             stage.getScene().getStylesheets().add("login.css");
             stage.show();
         }
         catch (IOException ex){
-
         }
 
     }

@@ -12,7 +12,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import main.Main;
+import main.Application;
 import main.User;
 
 import java.io.IOException;
@@ -40,8 +40,8 @@ public class signupController implements Initializable {
         String pcheck = passCheckIn.getText();
         User u = new User();
         if(u.signupCheck(uname, pword, pcheck)) {
-            Main.addUser(u);
-            Main.setCurrentUser(u);
+            Application.addUser(u);
+            Application.setCurrentUser(u);
             closeStage();
             loadMain();
         }
@@ -65,29 +65,31 @@ public class signupController implements Initializable {
 
     void loadMain() {
         try {
-            Parent parent = FXMLLoader.load(getClass().getResource("/main/main.fxml"));
+            Parent parent = FXMLLoader.load(getClass().getResource("/main/Application.fxml"));
             Stage stage = new Stage(StageStyle.DECORATED);
             stage.setTitle("Zoultron");
+            stage.setResizable(false);
             stage.setScene(new Scene(parent));
             stage.getScene().getStylesheets().add("main.css");
             stage.show();
         }
         catch (IOException ex){
-
+            System.err.println(ex);
         }
     }
 
     void loadLogin() {
         try {
-            Parent parent = FXMLLoader.load(getClass().getResource("/main//login/login.fxml"));
+            Parent parent = FXMLLoader.load(getClass().getResource("/main/login.fxml"));
             Stage stage = new Stage(StageStyle.DECORATED);
             stage.setTitle("Zoultron");
+            stage.setResizable(false);
             stage.setScene(new Scene(parent));
             stage.getScene().getStylesheets().add("login.css");
             stage.show();
         }
         catch (IOException ex){
-
+            System.err.println(ex);
         }
     }
 
