@@ -22,7 +22,8 @@ software modeling and design
     - you can check by running java -version which shoould be 14
     - it will not work otherwise
 3. download the jar and batch from this repo
-4. run batch
+4. Edit the batch to include required paths
+5. run batch
 ## Things you will need to edit
 1. Java JDK
     - https://www.oracle.com/java/technologies/javase-jdk14-downloads.html
