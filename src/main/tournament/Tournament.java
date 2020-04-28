@@ -13,6 +13,7 @@ public class Tournament
 
     public void generateBracket()
     {
-        //Genreate, display, and
+        //Genreate and Display Bracket
+       
     }
 }
